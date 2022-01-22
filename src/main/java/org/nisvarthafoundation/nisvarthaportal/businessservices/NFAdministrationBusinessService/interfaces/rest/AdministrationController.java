@@ -85,6 +85,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
     @GetMapping("/getFlashMessage")
     @ResponseBody
     public NisvarthaFlashMessage getFlashMessage(){
+    	System.out.println("Test Flash Message");
     return administrationQueryService.getActiveFlashMessage();
     }
     
